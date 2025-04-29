@@ -1,0 +1,38 @@
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+
+  background-color: var(--color-bg-secondary);
+
+  padding: 1rem;
+
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+
+  flex: 1;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg-primary);
+  color: var(--color-txt-primary);
+  box-sizing: border-box;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0.5rem;
+
+  flex: 1 1 calc(33.333% - 1rem);
+  min-height: 50%;
+
+  border: 2px solid var(--color-bg-accent);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background-color: var(--color-bg-secondary);
+  color: var(--color-txt-accent);
+}
